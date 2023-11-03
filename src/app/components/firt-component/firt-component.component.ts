@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class FirtComponentComponent {
 
+  nome:string="Adenis";
+  idade:number=33;
+  arrayDeMotos=["honda bis","honda 125"];
+  objAnoCor={
+    ano:2012,
+    cor:"Preta"
+  }
 }

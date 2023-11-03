@@ -1,0 +1,10 @@
+<p *ngIf="canShow">Pode mostrar booleano</p>
+
+<p *ngIf="name=== 'adenis'">Pode mostrar  adenis igual</p>
+
+<p *ngIf=" lastName=== 'luiz';else lastNameNotFound">Estou no if lastName é luiz</p>
+<ng-template #lastNameNotFound>
+<p >Estou no else nome não é luiz</p>
+</ng-template>
+
+

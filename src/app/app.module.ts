@@ -7,6 +7,7 @@ import { FirtComponentComponent } from './components/firt-component/firt-compone
 import { TesteComponent } from './components/teste/teste.component';
 import { ParentDataComponent } from './components/parent-data/parent-data.component';
 import { DiretivasComponent } from './components/diretivas/diretivas.component';
+import { IfRenderComponent } from './components/if-render/if-render.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { DiretivasComponent } from './components/diretivas/diretivas.component';
     FirtComponentComponent,
     TesteComponent,
     ParentDataComponent,
-    DiretivasComponent
+    DiretivasComponent,
+    IfRenderComponent
   ],
   imports: [
     BrowserModule,

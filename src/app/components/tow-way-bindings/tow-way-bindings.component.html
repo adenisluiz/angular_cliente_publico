@@ -1,0 +1,9 @@
+<p>tow-way-bindings works!</p>
+<form>
+    <input type="text" 
+    [(ngModel)]="name"
+    name="name" 
+    placeholder="Digite seu nome" />
+    <input type="submit" value="Enviar" />
+    <p *ngIf="name!=''">O nome é: {{name}}</p>
+</form>

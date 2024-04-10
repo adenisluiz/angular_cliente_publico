@@ -15,6 +15,7 @@ import { ChangeNumberComponent } from './components/change-number/change-number.
 import { ListRenderComponent } from './components/list-render/list-render.component';
 import { PipesComponent } from './components/pipes/pipes.component';
 import { TowWayBindingsComponent } from './components/tow-way-bindings/tow-way-bindings.component';
+import{HttpClientModule} from '@angular/common/http';
 
 
 @NgModule({
@@ -36,6 +37,7 @@ import { TowWayBindingsComponent } from './components/tow-way-bindings/tow-way-b
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

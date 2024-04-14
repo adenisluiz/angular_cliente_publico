@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Animal } from 'src/app/Animal';
 import { ListService } from 'src/app/services/list.service';
-
+import { ActivatedRoute, Route } from '@angular/router';
 
 @Component({
   selector: 'app-list-render',
@@ -14,12 +14,11 @@ export class ListRenderComponent {
   constructor(private listService:ListService){
     this.getAnimals();
   }
-  animals:Animal[]=[];
-  /*animals:Animal[]=[
-    {name:'tob',type:'dog',age:10},
+  animals:Animal[]=[
+    /*{name:'tob',type:'dog',age:10},
     {name:'nina',type:'cat',age:5},
     {name:'frida',type:'horse',age:6}
-  ]*/
+  */]
 
   animalDetails="";
   showAge(animal:Animal){
@@ -29,8 +28,8 @@ export class ListRenderComponent {
     console.log("Removendo animal");
     this.animals=this.listService.removeAnimal(pAnimals,animal)
   }
-  getAnimals():void{
+getAnimals():void{
     this.listService.getAll().subscribe((animals)=>(this.animals=animals));
   }
-
+    
 }

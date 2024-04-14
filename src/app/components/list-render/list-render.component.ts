@@ -25,8 +25,8 @@ export class ListRenderComponent {
   this.animalDetails= 'O animal tem:'+animal.age+"anos";
   }
   removeAnimal(pAnimals:Animal[],animal:Animal){
-    console.log("Removendo animal");
-    this.animals=this.listService.removeAnimal(pAnimals,animal)
+    this.animals=this.animals.filter((a)=>animal.name!==a.name);
+    this.listService.remove(animal.id).subscribe();
   }
 getAnimals():void{
     this.listService.getAll().subscribe((animals)=>(this.animals=animals));

@@ -12,7 +12,10 @@ export class ListService {
 
   removeAnimal(animals:Animal[],animal:Animal){
     console.log("Ativando servico");
-    return animals.filter((a)=>animal.name!==a.name);
+    return 
+  }
+  remove(id:number){
+    return this.http.delete<Animal>(`${this.apiUrl}/${id}`);
   }
 
   getAll():Observable<Animal[]>{

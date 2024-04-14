@@ -16,7 +16,7 @@ import { ListRenderComponent } from './components/list-render/list-render.compon
 import { PipesComponent } from './components/pipes/pipes.component';
 import { TowWayBindingsComponent } from './components/tow-way-bindings/tow-way-bindings.component';
 import{HttpClientModule} from '@angular/common/http';
-
+import { ItemDetailComponent } from './components/item-detail/item-detail.component';
 
 @NgModule({
   declarations: [
@@ -31,9 +31,11 @@ import{HttpClientModule} from '@angular/common/http';
     ChangeNumberComponent,
     ListRenderComponent,
     PipesComponent,
-    TowWayBindingsComponent
+    TowWayBindingsComponent,
+    ItemDetailComponent
   ],
   imports: [
+    AppRoutingModule,
     BrowserModule,
     AppRoutingModule,
     FormsModule,
